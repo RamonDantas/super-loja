@@ -34,7 +34,7 @@ class ProductBox extends React.Component {
                     <Button size="small" color="primary">
                     Saiba mais
                     </Button>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" onClick={() => product.addItemCart(product)}>
                         <span className="material-icons">
                             shopping_cart
                         </span>
