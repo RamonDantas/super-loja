@@ -18,11 +18,6 @@ class Home extends React.Component {
             products: response.data,
         });
     };
-
-    
-    
-
-    
     
     render() { 
         const {products} = this.state;
@@ -34,9 +29,7 @@ class Home extends React.Component {
                         {products.map((product, index) =>{
                         return (
                             <div key={index} className="col-12 col-md-4 my-3">
-                                <ProductBox 
-                                    {...product}
-                                />
+                                <ProductBox {...product} />
                             </div>
                         )
                         })}
